@@ -3,7 +3,7 @@
 <ul>
   <% @users.each do |user| %>
     <li>
-      <%= user.id %>. <%= user.first_name %> <%= user.last_name %> | <%= user.email %> 
+      <%= user.id %>. <%= user.first_name %> <%= user.last_name %> | <%= user.email %> | <%= user.points_overall %> 
     </li>
   <% end %>
   <%= link_to "Home", root_path %>
