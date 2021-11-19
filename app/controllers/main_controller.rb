@@ -14,6 +14,9 @@ class MainController < ApplicationController
     @games = Game.all
   end
 
+  def bets
+    @bets = Bet.all
+  end
 
   def create
     @user = User.new(user_params)

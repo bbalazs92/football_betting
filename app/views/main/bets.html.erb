@@ -1,0 +1,14 @@
+<h1>List of all bets</h1>
+
+<%= link_to "Home", root_path %>
+<ul>
+  <li>
+   Bet nr. | User ID | Game ID | T1 | T2 
+  </li>
+  <% @bets.each do |bet| %>
+    <li>
+      <%= bet.id %> | <%= bet.user_id %> | <%= bet.game_id %> | <%= bet.bet_team_one %> | <%= bet.bet_team_two %> | 
+    </li>
+  <% end %>
+  <%= link_to "Home", root_path %>
+</ul>
