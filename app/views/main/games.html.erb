@@ -1,0 +1,13 @@
+<h1>List of all games</h1>
+
+<ul>
+  <li>
+   Nr. | Team one | Team two | T1 | T2 | Winner
+  </li>
+  <% @games.each do |game| %>
+    <li>
+      <%= game.id %> | <%= game.team_one %> | <%= game.team_two %> | <%= game.score_team_one %> | <%= game.score_team_two %> | <%= game.winner %>
+    </li>
+  <% end %>
+  <%= link_to "Home", root_path %>
+</ul>
